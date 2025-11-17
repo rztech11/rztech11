@@ -14,16 +14,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);   // This is your updated XML
+        setContentView(R.layout.activity_main);   /
 
-        // Connect buttons
+
         btnSettings = findViewById(R.id.btn_settings);
         btnProfile  = findViewById(R.id.btn_profile);
 
-        // Load Settings fragment first by default
         loadFragment(new SettingsFragment());
 
-        // Settings Button Click
         btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Profile Button Click
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
